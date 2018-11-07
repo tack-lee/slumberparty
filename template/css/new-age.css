@@ -11,7 +11,8 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  /* font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; */
+  font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -242,8 +243,9 @@ section.features .section-heading {
   margin-bottom: 100px;
 }
 
-section.features .section-heading h2 {
+section.features .section-heading h1, h2 {
   margin-top: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 section.features .section-heading p {
@@ -414,9 +416,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-outline {
-  color: white;
+  color: black;
   border: 1px solid;
-  border-color: white;
+  border-color: black;
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
