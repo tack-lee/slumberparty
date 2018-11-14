@@ -1,0 +1,191 @@
+.logo-image {
+  /* background: rgba(0, 250, 250, 0.5) url('../brand/gradientlogo.png') no-repeat center center /cover; */
+  /* background: url('../time-to-sleep/png/015-pillow.png') no-repeat center center /cover;  */
+  /* background-blend-mode: screen; */
+  /* -webkit-filter : hue-rotate(100deg); */
+  /* filter : hue-rotate(200deg); */
+
+  background: url('../time-to-sleep/png/015-pillow.png') no-repeat center center /cover;
+  
+  /* background-repeat: no-repeat, no-repeat; */
+  filter: drop-shadow(0px 5px 20px green) invert(100%);
+  animation: move-left-right 1s infinite;
+}
+
+.invert-color {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.bg-brick {
+  background: url('../brand/brick-wall.png') no-repeat center center /cover;
+}
+
+.shadow-1 {
+  box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.shadow-2 {
+  box-shadow: 0px 20px 15px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* .shadow-1 {
+   -webkit-box-shadow: 0px 20px 40px 6px rgb(43, 42, 42);
+    -moz-box-shadow: 0px 20px 40px 6px rgba(43, 42, 42,1);
+    box-shadow: 0px 20px 40px 6px rgba(43, 42, 42,1);
+}  */
+
+.index-page .circles {
+  animation: move-left-right 1s infinite;
+  background: #ba54f5;
+  background: -webkit-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: -o-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: -moz-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  position: absolute;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.index-page .circles.circle1 {
+  animation: move-left-right 4s infinite;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  opacity: 0.5;
+  left: 3%;
+  top: -21%;
+}
+
+.index-page .circles.circle2 {
+  animation: move-left-right 6s infinite;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  opacity: 0.4;
+  right: -5%;
+  top: -12%;
+}
+
+.index-page .circles.circle3 {
+  animation: move-left-right 5s infinite;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.1;
+  left: -5%;
+  bottom: 0%;
+}
+
+.index-page .circles.circle4 {
+  animation: move-left-right 10s infinite;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  opacity: 0.9;
+  right: 27%;
+  top: 70%;
+}
+
+.index-page .circles.circle5 {
+   animation: move-left-right 6s infinite;
+   height: 250px;
+   width: 250px;
+   border-radius: 50%;
+   opacity: 0.2;
+   left: 32%;
+   bottom: 29%;
+}
+
+.index-page .circles.circle6 {
+  animation: move-left-right 9s infinite;
+  left: 10%;
+  top: 35%;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.index-page .circles.circle7 {
+  animation: move-left-right 3s infinite;
+  width: 300px;
+  height: 300px;
+  right: -5%;
+  bottom: 0%;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.page-header .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  height: 77%;
+  max-width: 1500px;
+}
+
+.page-header .content-top {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  z-index: 2;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 50%;
+  height: 50%;
+  max-width: 999px;
+}
+
+.page-header .content-bottom {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  z-index: 2;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 75%;
+  height: 60%;
+  max-width: 999px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header .content-center {
+    margin-top: 10vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-header .content-center {
+    margin-top: 10vh;
+    height: auto;
+  }
+}
+
+.bg-semi-transparent {
+  background: rgba(21, 22, 102, 0) !important;
+}
+
+.bg-gradient {
+  background: rgb(246,63,251);
+  background: radial-gradient(circle, rgba(246,63,251,0.17748645510835914) 0%, rgba(193,70,252,0.5056598297213623) 100%);
+}
+
+.bg-darkest {
+  background: #0e102c;
+}
