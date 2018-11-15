@@ -6,7 +6,7 @@
   /* filter : hue-rotate(200deg); */
 
   background: url('../time-to-sleep/png/015-pillow.png') no-repeat center center /cover;
-  
+
   /* background-repeat: no-repeat, no-repeat; */
   filter: drop-shadow(0px 5px 20px green) invert(100%);
   animation: move-left-right 1s infinite;
@@ -164,13 +164,15 @@
 }
 
 #download-modal {
+  -ms-transform: translate(0, -13%);
   -webkit-transform: translate(0, -13%);
-  transform: translate(0, -13%); 
+  transform: translate(0, -13%);
 }
 
 #thankyou-modal {
+    -ms-transform: translate(0, 10%);
   -webkit-transform: translate(0, 10%);
-  transform: translate(0, 10%); 
+  transform: translate(0, 10%);
 }
 
 .modal-backdrop {
