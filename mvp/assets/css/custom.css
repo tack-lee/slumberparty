@@ -48,76 +48,6 @@
   border-radius: 20%;
 }
 
-.index-page .circles.circle1 {
-  animation: move-left-right 4s infinite;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  opacity: 0.5;
-  left: 3%;
-  top: -21%;
-}
-
-.index-page .circles.circle2 {
-  animation: move-left-right 6s infinite;
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  opacity: 0.4;
-  right: -5%;
-  top: -12%;
-}
-
-.index-page .circles.circle3 {
-  animation: move-left-right 5s infinite;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  opacity: 0.1;
-  left: -5%;
-  bottom: 0%;
-}
-
-.index-page .circles.circle4 {
-  animation: move-left-right 10s infinite;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  opacity: 0.9;
-  right: 27%;
-  top: 70%;
-}
-
-.index-page .circles.circle5 {
-   animation: move-left-right 6s infinite;
-   height: 250px;
-   width: 250px;
-   border-radius: 50%;
-   opacity: 0.2;
-   left: 32%;
-   bottom: 29%;
-}
-
-.index-page .circles.circle6 {
-  animation: move-left-right 9s infinite;
-  left: 10%;
-  top: 35%;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  opacity: 0.8;
-}
-
-.index-page .circles.circle7 {
-  animation: move-left-right 3s infinite;
-  width: 300px;
-  height: 300px;
-  right: -5%;
-  bottom: 0%;
-  border-radius: 50%;
-  opacity: 0.3;
-}
-
 .page-header .content-center {
   position: absolute;
   top: 50%;
@@ -165,17 +95,25 @@
 
 @media screen and (max-width: 768px) {
   .page-header .content-center {
-    margin-top: 10vh;
+    top: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .page-header .content-center {
+    top: 65%;
     height: auto;
   }
 }
 
 @media screen and (max-width: 576px) {
   .page-header .content-center {
-    margin-top: 10vh;
+    top: 70%;
     height: auto;
   }
 }
+
 
 .bg-semi-transparent {
   background: rgba(21, 22, 102, 0) !important;
@@ -188,4 +126,53 @@
 
 .bg-darkest {
   background: #0e102c;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .fixed-bottom {
+    position: static !important;
+  }
+}
+/* for mobile phones only*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .fixed-bottom {
+    position: static !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .navbar {
+    padding-left: 9vh;
+    padding-right: 9vh;
+    background-color: transparent !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding-left: 9vh;
+    padding-right: 9vh;
+    padding-top: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding-left: 15vh;
+    padding-right: 15vh;
+  }
+}
+
+#download-modal {
+  -webkit-transform: translate(0, -13%);
+  transform: translate(0, -13%); 
+}
+
+#thankyou-modal {
+  -webkit-transform: translate(0, 10%);
+  transform: translate(0, 10%); 
+}
+
+.modal-backdrop {
+  background-color: rgb(55, 0, 255, 1);
 }

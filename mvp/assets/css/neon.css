@@ -283,8 +283,6 @@ p a:hover {
   }
 }
 
-
-
 @keyframes pinkPulse {
   from { background-color: #ad1bca; -webkit-box-shadow: 0 0 12px rgb(215, 32, 240); }
   50% { background-color: #d209ec; -webkit-box-shadow: 0 0 18px #ff00ff; }
