@@ -95,21 +95,51 @@
 
 @media screen and (max-width: 768px) {
   .page-header .content-center {
-    top: 60%;
+    /* top: 60%;
+    height: auto; */
+    margin-top: 20vh;
     height: auto;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 668px) {
   .page-header .content-center {
-    top: 65%;
+    /* top: 65%; */
+    margin-top: 30vh;
     height: auto;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 668px) and (max-height: 376px) {
   .page-header .content-center {
-    top: 70%;
+    /* top: 65%; */
+    margin-top: 90vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 737px) and (min-height: 413px) {
+  .page-header .content-center {
+    /* top: 65%; */
+    margin-top: 70vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) and (max-height: 668px) {
+  .page-header .content-center {
+    /* top: 70%;
+    height: auto; */
+    margin-top: 40vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 415px) and (min-height: 735px) {
+  .page-header .content-center {
+    /* top: 70%;
+    height: auto; */
+    margin-top: 30vh;
     height: auto;
   }
 }
