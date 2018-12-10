@@ -62,7 +62,65 @@
     height: 16rem;
     object-fit: contain;
   }
+
+  main {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .extra-margins {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .jumbotron {
+    text-align: center;
+  }
+
+  .navbar {
+    background-color: #3b295a;
+  }
+
+  footer.page-footer {
+    background-color: #3b295a;
+    margin-top: 2rem;
+  }
+
+  .navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+  }
+
+  .navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+  }
   </style>
+
+  <!-- Begin Inspectlet Asynchronous Code -->
+  <script type="text/javascript">
+    (function () {
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 1424773149]);
+      var ldinsp = function () {
+        if (typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1424773149&r=' + Math.floor(new Date().getTime() / 3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);
+      };
+      setTimeout(ldinsp, 0);
+    })();
+  </script>
+  <!-- End Inspectlet Asynchronous Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130034520-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130034520-1');
+  </script>
+
+  <script language="javascript" type="text/javascript">
+    window.onload = function () { document.getElementById("loading").style.display = "none" }
+  </script>
+  <script src="handleSignUp.js"></script>
 </head>
 
 <body>
@@ -111,7 +169,8 @@
             <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link border border-white rounded px-3" target="_blank">
+            <a href="#about" class="nav-link border border-white rounded px-3" target="_blank"
+             data-toggle="modal" data-target="#download-modal" >
               <i class="fa fa-download mr-2"></i>Download Now
               <!-- <i class="fa fa-user mr-2"></i>Download Now -->
             </a>
@@ -130,7 +189,7 @@
   <main class="ml-5 mr-5">
     <section id="home">
       <div class="jumbotron z-depth-3" style="height: 75vh;">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row h-100 justify-content-center align-items-center pt-5">
           
             <!--Grid column-->
@@ -148,18 +207,18 @@
                 </strong>
               </p>
           
-              <p class="mb-4 text-md-left d-none d-md-block">
+              <!-- <p class="mb-4 text-md-left d-none d-md-block">
                 <strong>This paragraph will go away when the screen size is smaller because
                   it's not as important as the value prop/ sub value prop.
                 </strong>
-              </p>
+              </p> -->
           
               <!-- CTA -->
-              <a target="_blank" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" 
-              class="btn btn-danger z-depth-2">
+              <a target="_blank" 
+              data-toggle="modal" data-target="#download-modal"  
+              class="btn btn-info z-depth-2">
               <strong>
-                Download
-                Now For Free
+                Download Now For Free
               </strong>
                 <i class="fa fa-download ml-2"></i>
               </a>
@@ -170,7 +229,7 @@
             <!--Grid column-->
             <div class="col-md-5 d-none d-md-block">
               <div class="mt-5">
-                <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid">
+                <img src="./img/game.png" alt="" class="img-fluid">
     
               </div>
           
@@ -186,9 +245,10 @@
         
       </div>
     </section>
-
+    <hr class="hr-dark" />
+  
     <section id="features">
-      <div class="container-fluid p-4 mb-3 border border-light z-depth-3">
+      <!-- <div class="container-fluid p-4 mb-3 border border-light z-depth-3"> -->
         <h2 class="text-center text-black p-2 font-weight-bold">
           Features
         </h2>
@@ -239,9 +299,54 @@
             </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </section>
-  
+      
+  <div class="modal justify-content-center align-items-center fade modal-light" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content mt-5 mr-5 ml-5 mb-5">
+          <div class="modal-header justify-content-center">
+            <div class="text-center ml-auto mr-auto">
+              <img src="./img/logo_icon.png" class="rounded" style="width: 4em; height: 4em;">
+              <h3 class="text-black">SLUMBER PARTY</h3>
+            </div>
+          </div>
+          <div class="modal-body pl-5 pr-5 m-5 ml-3 mr-3 z-depth-2">
+            
+            <p class="text-left text-black">
+              <strong>
+                Hello!
+                <br>
+                <br>
+                You caught us before our launch.
+                We're working hard to put the finishing touches on the app. Just wanted to let you know that it's going
+                well and it should be ready to help you wake up very soon.
+                Sign up now and we’ll let you know when it’s ready!
+              </strong>
+            </p>
+            
+            <form id="signup-form" role="form" method="GET">
+              <div class="form-group pt-4">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input class="form-control" type="email" name="USER_EMAIL" id="form_field_email" placeholder="Enter your email">
+                </div>
+                <div class="text-center pt-3">
+                  <button type="submit" id="signup-submit" class="btn btn-info z-depth-3" data-dismiss="modal">Remind
+                    Me</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
   <!--Main layout-->
 
