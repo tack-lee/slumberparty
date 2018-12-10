@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    main {
+      height: 90%;
+    }
+  
+    @media (max-width: 740px) {
+  
+      html,
+      body,
+      header,
+      .view {
+        height: 1050px;
+      }
+    }
+  
+    @media (min-width: 800px) and (max-width: 850px) {
+  
+      html,
+      body,
+      header,
+      .view {
+        height: 700px;
+      }
+    }
+  
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+
+  /* body.container {
+    height: 50vh;
+  }  */
+
+  .card-img-top {
+    height: 16rem;
+    object-fit: contain;
+  }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+    <div class="container">
+  
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img class="mr-2" 
+          style="height:1.8em; object-fit: contain;" 
+          src="./img/logo_icon.png" />
+        <strong>SLUMBER PARTY</strong>
+      </a>
+  
+      <!-- Collapse -->
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto smooth-scroll">
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="#features">Features</a>
+          </li>
+        </ul>
+  
+        <!-- Social Icon  -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link border border-white rounded px-3" target="_blank">
+              <i class="fa fa-download mr-2"></i>Download Now
+              <!-- <i class="fa fa-user mr-2"></i>Download Now -->
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible content -->
+  
+    </div>
+  
+    </div>
+  </nav>
+  <!-- Navbar -->
+  
+  <!--Main layout-->
+  <main class="ml-5 mr-5">
+    <section id="home">
+      <div class="jumbotron z-depth-3" style="height: 75vh;">
+        <div class="container-fluid">
+          <div class="row h-100 justify-content-center align-items-center pt-5">
+          
+            <!--Grid column-->
+            <div class="col-md-7 black-text text-center ">
+              <!-- Value Prop Headline -->
+              <h1 class="display-4 font-weight-bold">Find waking up hard?</h1>
+              <!-- <h1 class="display-4 font-weight-bold">Find waking up hard?</h1>
+           -->
+              <hr class="hr-dark">
+          
+              <!-- Value Prop Sub-headline -->
+              <p class="text-md-left d-md-block">
+                <strong>
+                  Wake up and compete against other college students to stop snoozing and start earning!
+                </strong>
+              </p>
+          
+              <p class="mb-4 text-md-left d-none d-md-block">
+                <strong>This paragraph will go away when the screen size is smaller because
+                  it's not as important as the value prop/ sub value prop.
+                </strong>
+              </p>
+          
+              <!-- CTA -->
+              <a target="_blank" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" 
+              class="btn btn-danger z-depth-2">
+              <strong>
+                Download
+                Now For Free
+              </strong>
+                <i class="fa fa-download ml-2"></i>
+              </a>
+          
+            </div>
+            <!--Grid column-->
+          
+            <!--Grid column-->
+            <div class="col-md-5 d-none d-md-block">
+              <div class="mt-5">
+                <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid">
+    
+              </div>
+          
+            </div>
+            <!--Grid column-->
+          
+          </div>
+          <!--Grid row-->
+          
+          <!-- Start 3 Card Group -->
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container-fluid p-4 mb-3 border border-light z-depth-3">
+        <h2 class="text-center text-black p-2 font-weight-bold">
+          Features
+        </h2>
+        <div class="row h-100 ml-4 mr-4 mb-4">
+          <div class="card-deck flex-grow">
+            <div class="card pl-3 pr-3 z-depth-5">
+              <img class="card-img-top" src="img/pool.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <strong>
+                    POOL
+                  </strong>
+                  <hr class="hr-dark">
+                </h5>
+                <p class="card-text">At the start of each week you get matched with new students.
+                
+                Matching is based on the time your alarm is set and the amount you'd like to win.</p>
+               
+              </div>
+            </div>
+            <div class="card pl-3 pr-3 z-depth-5">
+              <img class="card-img-top" src="img/task.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <strong>
+                    TASK
+                  </strong>
+                  <hr class="hr-dark">
+                </h5>
+                <p class="card-text">Do a simple task to prove you’re awake when your alarm goes off.
+                
+                Earn points for snapping a selfie, solving a math problem or answering a trivia question instead of snoozing!</p>
+               
+              </div>
+            </div>
+            <div class="card pl-3 pr-3 z-depth-5">
+              <img class="card-img-top" src="img/win.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <strong>
+                    WIN
+                  </strong>
+                  <hr class="hr-dark">
+                </h5>
+                <p class="card-text">At the end of each week, the user with the most points wins the money!</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  <!--Main layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
